@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
-In order to deploy install [angular-cli-ghpages](https://github.com/angular-buch/angular-cli-ghpages) and run `ngh --repo=https://github.com/coffee-project/coffee-project.github.io.git --branch=master`
+In order to deploy install [angular-cli-ghpages](https://github.com/angular-buch/angular-cli-ghpages); build the project with `--aot` flag and run `ngh --repo=https://github.com/coffee-project/coffee-project.github.io.git --branch=master` from the root directory
 
 ## Development server
 
