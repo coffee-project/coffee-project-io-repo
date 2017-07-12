@@ -1,6 +1,6 @@
 # coffee-project.github.io - source code
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
 In order to deploy to coffee-project.github.io install [angular-cli-ghpages](https://github.com/angular-buch/angular-cli-ghpages) and build the project with `--aot` flag.
 
