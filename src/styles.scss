@@ -8,7 +8,16 @@ body {
     padding: 0;
     margin: 0;
     font-family: $primary-font;
-    ;
+}
+
+h1 {
+    font-family: $primary-font;
+    color: $primary-color-dark;
+    text-transform: uppercase;
+}
+
+button {
+    color: $primary-color-dark;
 }
 
 .app {
