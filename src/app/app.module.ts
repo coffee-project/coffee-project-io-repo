@@ -20,12 +20,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HelloComponent } from './hello/hello.component';
+import { BlogComponent } from './blog/blog.component';
+import { InitiativesComponent } from './initiatives/initiatives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    HelloComponent
+    HelloComponent,
+    BlogComponent,
+    InitiativesComponent
   ],
   imports: [
     BrowserModule,
