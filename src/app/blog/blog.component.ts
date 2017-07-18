@@ -11,9 +11,9 @@ export class BlogComponent implements OnInit {
 
 // try
 
-  blogs: FirebaseListObservable<any[]>;
+  posts: FirebaseListObservable<any[]>;
   constructor(db: AngularFireDatabase) {
-    this.blogs = db.list('/blog');
+    this.posts = db.list('/posts');
   }
 
 //
