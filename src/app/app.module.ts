@@ -16,11 +16,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MdlModule } from '@angular-mdl/core';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { AboutComponent } from './about/about.component';
+import { HelloComponent } from './hello/hello.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
