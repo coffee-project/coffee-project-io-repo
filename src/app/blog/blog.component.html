@@ -1,3 +1,8 @@
 <p>
-  blog works!
+    blog works!
 </p>
+<ul>
+    <li class="text" *ngFor="let blog of blogs | async">
+        {{blog.$value}}
+    </li>
+</ul>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -7,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+// try
+
+  blogs: FirebaseListObservable<any[]>;
+  constructor(db: AngularFireDatabase) {
+    this.blogs = db.list('/blog');
+  }
+
+//
 
   ngOnInit() {
   }
