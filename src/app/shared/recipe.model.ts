@@ -4,7 +4,7 @@ export class Recipe {
     date: string;
     barista: string;
     team: string;
-    private: boolean;
+    privacy: boolean;
     grinder: string;
     coffee: string;
     dose: number;

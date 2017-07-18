@@ -12,6 +12,8 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
+import { MdInputModule, MdButtonModule } from '@angular/material';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MdlModule } from '@angular-mdl/core';
 
@@ -22,6 +24,7 @@ import { AboutComponent } from './about/about.component';
 import { HelloComponent } from './hello/hello.component';
 import { BlogComponent } from './blog/blog.component';
 import { InitiativesComponent } from './initiatives/initiatives.component';
+import { PostFormComponent } from './post-form/post-form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { InitiativesComponent } from './initiatives/initiatives.component';
     AboutComponent,
     HelloComponent,
     BlogComponent,
-    InitiativesComponent
+    InitiativesComponent,
+    PostFormComponent
   ],
   imports: [
     BrowserModule,
@@ -41,9 +45,11 @@ import { InitiativesComponent } from './initiatives/initiatives.component';
     AngularFireDatabaseModule, // imports firebase/database, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     MaterialModule,
+    MdInputModule,
+    MdButtonModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MdlModule
+    MdlModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

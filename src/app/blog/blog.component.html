@@ -1,8 +1,26 @@
 <p>
     blog works!
 </p>
-<ul>
-    <li class="text" *ngFor="let blog of blogs | async">
-        {{blog.$value}}
+<md-card *ngFor="let post of posts | async">
+    <md-card-title>{{post.title}}</md-card-title>
+    <md-card-subtitle>{{post.author}}</md-card-subtitle>
+    <img src="{{post.image}}" class="md-card-image" alt="image caption">
+    <md-card-content>
+        <h2> {{post.title}}</h2>
+        <p>{{post.description}}</p>
+    </md-card-content>
+    <!-- <md-card-actions layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+    </md-card-actions> -->
+</md-card>
+<!-- <ul>
+    <li class="text" *ngFor="let post of posts | async">
+
+
+        <md-card>{{post.title}}</md-card>
+
+
+        {{post.title}} {{post.author}} {{post.description}}
     </li>
-</ul>
+</ul> -->
