@@ -5,7 +5,6 @@ import { AboutComponent } from './about/about.component';
 import { HelloComponent } from './hello/hello.component';
 import { BlogComponent } from './blog/blog.component';
 import { InitiativesComponent } from './initiatives/initiatives.component';
-import { PostFormComponent } from './post-form/post-form.component';
 
 
 const routes: Routes = [
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'initiatives', component: InitiativesComponent },
-  { path: 'post-form', component: PostFormComponent },
 // { path: '**', component: HelloComponent }
   {
     path: '',

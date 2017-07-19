@@ -24,7 +24,9 @@ import { AboutComponent } from './about/about.component';
 import { HelloComponent } from './hello/hello.component';
 import { BlogComponent } from './blog/blog.component';
 import { InitiativesComponent } from './initiatives/initiatives.component';
-import { PostFormComponent } from './post-form/post-form.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { MainComponent } from './layout/main/main.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { PostFormComponent } from './post-form/post-form.component';
     HelloComponent,
     BlogComponent,
     InitiativesComponent,
-    PostFormComponent
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
