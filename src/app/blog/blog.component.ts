@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
+import {MdCardModule} from '@angular/material';
+
 @Component({
   selector: 'coffeeprojectapp-blog',
   templateUrl: './blog.component.html',

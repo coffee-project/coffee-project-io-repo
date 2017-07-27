@@ -4,8 +4,12 @@
 @import 'grey-deep-orange.sass';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 // some basic resets
+html,
 body {
     font-family: $primary-font;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -18,6 +22,6 @@ button {
     color: $primary-color-dark;
 }
 
-.app {
-    height: 100vh; // emmet h100vh
-}
+// .app {
+//     height: 100vh; // emmet h100vh
+// }

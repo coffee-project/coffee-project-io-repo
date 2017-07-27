@@ -1,3 +1,17 @@
-<p>
-  header works!
-</p>
+<md-toolbar>
+    <button md-button [mdMenuTriggerFor]="menu">Menu</button>
+    <md-menu #menu="mdMenu">
+        <button md-menu-item routerLink="/hello" routerLinkActive="active">home</button>
+        <button md-menu-item routerLink="/blog" routerLinkActive="active">blog</button>
+        <button md-menu-item routerLink="/about" routerLinkActive="active">about</button>
+        <button md-menu-item routerLink="/initiatives" routerLinkActive="active">initiatives</button>
+
+    </md-menu>
+
+    <span class="fill-remaining-space">
+      welcome
+    </span>
+    <button md-raised-button color="primary">
+    Menu
+  </button>
+</md-toolbar>
