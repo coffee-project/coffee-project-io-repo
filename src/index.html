@@ -36,10 +36,44 @@
 </head>
 
 <body>
-    <style>
+    <coffeeprojectapp-root>
+        <style>
+            coffeeprojectapp-root {
+                background-image: url('/assets/gplaypattern_@2X.png');
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-size: 5em;
+                color: #455A64;
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            }
+            
+            @keyframes dots {
+                50% {
+                    transform: translateY(-.4rem);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+            
+            .d {
+                animation: dots 1.5s ease-out infinite;
+            }
+            
+            .d-2 {
+                animation-delay: .5s;
+            }
+            
+            .d-3 {
+                animation-delay: 1s;
+            }
+        </style>
 
-    </style>
-    <coffeeprojectapp-root>Loading...</coffeeprojectapp-root>
+        Loading<span class="d">.</span><span class="d d-2">.</span><span class="d d-3">.</span>
+    </coffeeprojectapp-root>
+
 </body>
 
 </html>

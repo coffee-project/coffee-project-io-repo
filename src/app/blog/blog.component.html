@@ -1,6 +1,9 @@
-<div class="blog-post-card">
+<!-- <div class="blog-post-card"> -->
 
-    <md-card *ngFor="let post of posts | async">
+<div fxLayout="column" fxLayoutAlign="center center">
+
+
+    <md-card *ngFor="let post of posts | async" fxFlex="80%">
         <md-card-title>{{post.title}}</md-card-title>
         <md-card-subtitle>{{post.author}}</md-card-subtitle>
         <img md-card-image src="{{post.image}}" alt="image caption">

@@ -7,12 +7,14 @@ import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AuthService } from './shared/auth.service';
 
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
-import { MdInputModule, MdButtonModule } from '@angular/material';
+import { MdInputModule, MdCardModule, MdListModule, MdButtonModule, MdToolbarModule, MdMenuModule } from '@angular/material';
+
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MdlModule } from '@angular-mdl/core';
@@ -51,11 +53,15 @@ import { MainComponent } from './layout/main/main.component';
     MaterialModule,
     MdInputModule,
     MdButtonModule,
+    MdToolbarModule,
+    MdMenuModule,
+    MdCardModule,
+    MdListModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     MdlModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

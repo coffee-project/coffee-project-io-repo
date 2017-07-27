@@ -18,7 +18,8 @@
         "testTsconfig": "tsconfig.spec.json",
         "prefix": "coffeeprojectapp",
         "styles": [
-            "styles.scss"
+            "styles.scss",
+            "grey-deep-orange.sass"
         ],
         "scripts": [],
         "environmentSource": "environments/environment.ts",
