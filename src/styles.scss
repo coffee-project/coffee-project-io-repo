@@ -1,27 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import 'grey-deep-orange.sass';
-// some basic resets
-html,
+.app {
+    height: 100vh; // emmet h100vh
+    font-family: 'Karla', sans-serif;
+    color: $primary-color-dark;
+}
+
+a {
+    text-decoration: none;
+    color: $accent-color;
+}
+
 body {
-    font-family: $primary-font;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-h1 {
-    font-family: $primary-font;
-    color: $primary-color-dark;
-    text-transform: uppercase;
-}
-
-button {
+    // background-image: url('./assets/sq-image-01.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Karla', sans-serif;
     color: $primary-color-dark;
 }
 
+a {
+    text-decoration: none;
+    color: $accent-color;
+}
+
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// @import 'grey-deep-orange.sass';
+// html,
+// body {
+//     font-family: $primary-font;
+//     margin: 0;
+//     width: 100%;
+//     height: 100%;
+// }
+// h1 {
+//     font-family: $primary-font;
+//     color: $primary-color-dark;
+//     text-transform: uppercase;
+// }
+// button {
+//     color: $primary-color-dark;
+// }
 // .app {
 //     height: 100vh; // emmet h100vh
 // }
