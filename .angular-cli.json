@@ -19,7 +19,7 @@
         "prefix": "coffeeprojectapp",
         "styles": [
             "styles.scss",
-            "grey-deep-orange.sass"
+            "grey-deep-orange.scss"
         ],
         "scripts": [],
         "environmentSource": "environments/environment.ts",

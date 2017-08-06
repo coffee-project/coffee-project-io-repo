@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { FanMenuModule } from 'ng2-fan-menu';
+
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -60,6 +62,7 @@ import { MainComponent } from './layout/main/main.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MdlModule,
+    FanMenuModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

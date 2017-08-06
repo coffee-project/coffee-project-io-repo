@@ -1,15 +1,4 @@
 @import './../../styles.scss';
-.layout {
-    // background-image: url('./assets/sq-image-01.svg');
-    font-family: 'Karla', sans-serif;
-    color: $primary-color-dark;
-}
-
-a {
-    text-decoration: none;
-    color: $accent-color;
-}
-
 .fill-remaining-space {
     // This fills the remaining space, by using flexbox. 
     // Every toolbar row uses a flexbox row layout.
@@ -30,8 +19,4 @@ md-sidenav-layout {
 
 .sidenav {
     width: 300px;
-}
-
-.fill-remaining-space {
-    flex: 1 1 auto;
 }

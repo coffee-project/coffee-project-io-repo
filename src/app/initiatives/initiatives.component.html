@@ -8,23 +8,26 @@
     </div>
 </div> -->
 
-<div> {{ (user | async)?.photo }} </div>
-<button (click)="login()" *ngIf="!(user | async)?.uid">Login</button>
-<button (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
+<div fxLayout="row" fxLayoutAlign="center center">
+    <md-card fxFlex="80%">
 
-<input type="text" id="message" *ngIf="(user | async)?.uid" placeholder="What is it that you do?" (keyup.enter)="Send($event.target.value)" [(ngModel)]="msgVal" />
+        <div> {{ (user | async)?.uid }} </div>
+        <button (click)="login()" *ngIf="!(user | async)?.uid">Login</button>
+        <button (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
 
-<div id="details-container">
+        <input type="text" id="message" *ngIf="(user | async)?.uid" placeholder="What is it that you do?" (keyup.enter)="Send($event.target.value)" [(ngModel)]="msgVal" />
+
+        <div id="details-container">
 
 
-    <md-card>
-        <md-list *ngFor="let item of items | async">
-            <md-list-item>
-                <img md-list-avatar src="../assets/images/pin.svg" alt="Desc 1">
-                <h3 md-line>Message from {{item.name}}</h3>
-                <p md-line>{{item.message}}
-                </p>
-            </md-list-item>
-        </md-list>
-    </md-card>
-</div>
+            <md-card>
+                <md-list *ngFor="let item of items | async">
+                    <md-list-item>
+                        <img md-list-avatar src="../assets/images/pin.svg" alt="Desc 1">
+                        <h3 md-line>Message from {{item.name}}</h3>
+                        <p md-line>{{item.message}}
+                        </p>
+                    </md-list-item>
+                </md-list>
+            </md-card>
+        </div>

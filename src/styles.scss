@@ -1,24 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
-@import 'grey-deep-orange.sass';
-.app {
-    height: 100vh; // emmet h100vh
-    font-family: 'Karla', sans-serif;
-    color: $primary-color-dark;
-}
-
-a {
-    text-decoration: none;
-    color: $accent-color;
-}
-
+@import 'grey-deep-orange.scss';
 body {
     // background-image: url('./assets/sq-image-01.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('/assets/gplaypattern_@2X.png');
+    height: 100vh;
     font-family: 'Karla', sans-serif;
-    color: $primary-color-dark;
+    color: $primary-text-color;
 }
 
 a {

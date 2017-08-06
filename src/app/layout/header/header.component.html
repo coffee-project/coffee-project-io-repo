@@ -1,4 +1,4 @@
-<md-toolbar class="layout">
+<!-- <md-toolbar class="layout">
     <button md-button [mdMenuTriggerFor]="menu">Menu</button>
     <md-menu #menu="mdMenu">
         <button md-menu-item routerLink="/hello" routerLinkActive="active">home</button>
@@ -11,7 +11,41 @@
     <span class="fill-remaining-space">
       welcome
     </span>
-    <button md-raised-button color="primary">
-    Menu
+    <button md-button [mdMenuTriggerFor]="menu">login    </button>
+    <md-menu #menu="mdMenu">
+        <button (click)="login()" *ngIf="!(user | async)?.uid">Login</button>
+        <button (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
+    </md-menu>
+</md-toolbar> -->
+
+<button md-icon-button color="primary" [mdMenuTriggerFor]="menu">
+  <md-icon color="primary">fingerprint</md-icon>
+</button>
+<md-menu color="primary" #menu="mdMenu">
+    <!--<button color="primary" md-menu-item (click)="loginGoogle()" id="google"><md-icon>check</md-icon> <span>Login</span>
+  </button>-->
+
+    <button md-menu-item routerLink="/hello" routerLinkActive="active">home</button>
+    <button md-menu-item routerLink="/blog" routerLinkActive="active">blog</button>
+    <button md-menu-item routerLink="/about" routerLinkActive="active">about</button>
+    <button md-menu-item routerLink="/initiatives" routerLinkActive="active">initiatives</button>
+
+
+    <button color="primary" md-menu-item (click)="login()"><md-icon>check</md-icon> <span>Login</span>
   </button>
-</md-toolbar>
+    <button color="primary" md-menu-item (click)="logout()">
+    <md-icon>close</md-icon>
+    <span>Logout</span>
+  </button>
+    <!--<button color="primary" md-menu-item routerLink="/gallery2" routerLinkActive="active">
+    <md-icon>close</md-icon>
+    <span>gallery 2</span>
+  </button>
+    <button color="primary" md-menu-item routerLink="/gallery3" routerLinkActive="active">
+    <md-icon>close</md-icon>
+    <span>gallery 2</span>
+  </button>-->
+</md-menu>
+<a routerLink="/" routerLinkActive="active">
+
+</a>
