@@ -1,5 +1,31 @@
 <!-- <div class="blog-post-card"> -->
 
+
+<md-card fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutWrap>
+
+
+
+    <md-card *ngFor="let post of posts | async" fxFlex="50">
+        <md-card-header>
+            <md-card-title>
+                <h5>{{ post.title }}</h5>
+            </md-card-title>
+            <img md-card-avatar src="{{post.image}}">
+        </md-card-header>
+        <img md-card-image src="{{post.image}}" alt="image caption">
+        <md-card-content>
+            <h5><small>{{ post.author }}</small></h5>
+            <p>{{post.text}}</p>
+        </md-card-content>
+
+        <md-card-actions>
+            <button md-button><md-icon>email</md-icon> Email {{ item.name }}</button>
+            <button md-button><md-icon>call</md-icon> Call {{ item.name }}</button>
+        </md-card-actions>
+    </md-card>
+
+</md-card>
+
 <div fxLayout="column" fxLayoutAlign="center center">
 
 

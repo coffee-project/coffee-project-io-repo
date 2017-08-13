@@ -6,6 +6,15 @@
     text-align: center;
 }
 
+// header {
+//     border-bottom: 1px dashed $primary-text-color;
+//     margin-bottom: 0;
+// }
+.logo {
+    border-bottom: 1px dotted $primary-text-color;
+    margin-bottom: 0;
+}
+
 md-sidenav-container,
 .my-content {
     margin: 0;

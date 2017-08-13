@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700,900');
 @import 'grey-deep-orange.scss';
 body {
-    // background-image: url('./assets/sq-image-01.svg');
-    background-image: url('/assets/gplaypattern_@2X.png');
+    background-image: url('/assets/coffee-project-sq-logo-clean.svg'), url('/assets/gplaypattern_@2X.png');
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    background-position: center;
     height: 100vh;
     font-family: 'Karla', sans-serif;
     color: $primary-text-color;
@@ -13,6 +15,18 @@ body {
 a {
     text-decoration: none;
     color: $accent-color;
+}
+
+h1 {
+    font-family: $primary-font;
+    font-weight: 900;
+    color: $primary-color-dark;
+}
+
+md-card {
+    // max-width: 80%;
+    margin: 2em auto;
+    text-align: center;
 }
 
 // @import '~@angular/material/prebuilt-themes/indigo-pink.css';
